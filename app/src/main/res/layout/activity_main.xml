@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_fragment_tab_host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="FragmentTabHost"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tab_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <Button
+        android:id="@+id/btn_tab_vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FragmentTabHostVp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tab_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fragment_tab_host" />
+
+    <Button
+        android:id="@+id/btn_tab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:padding="20dp"
+        android:text="TabLayout"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btn_bottom_navigation_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tab_vp" />
+
+    <Button
+        android:id="@+id/btn_bottom_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="BottomNavigationView"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btn_radio_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tab_layout" />
+
+    <Button
+        android:id="@+id/btn_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="BottomNavigationView"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bottom_navigation_view" />
+
+</android.support.constraint.ConstraintLayout>
